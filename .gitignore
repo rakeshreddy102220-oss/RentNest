@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+*.db
+client/node_modules
+server/node_modules
+.DS_Store
+node-portable.zip
+*.log
+out*.txt
+node-portable/
