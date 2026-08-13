@@ -1,6 +1,6 @@
 import type { Property, UserPayload } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = 'https://rentnest-backend-xxxx.onrender.com/api';
 
 const authHeaders = (): Record<string, string> => {
   const token = localStorage.getItem('rentnest_token');
