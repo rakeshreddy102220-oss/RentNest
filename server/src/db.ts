@@ -1,9 +1,13 @@
-import sqlite3 from 'sqlite3';
 import { open, Database } from 'sqlite';
 import bcrypt from 'bcryptjs';
 import path from 'path';
+import { mkdirSync } from 'fs';
 
-const dbPath = path.join(process.cwd(), 'data', 'rentnest.db');
+const dataDir = path.join(process.cwd(), 'data');
+
+mkdirSync(dataDir, { recursive: true });
+
+const dbPath = path.join(dataDir, 'rentnest.db');
 
 export let db: Database<sqlite3.Database, sqlite3.Statement>;
 
