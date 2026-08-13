@@ -1,4 +1,5 @@
 import { open, Database } from 'sqlite';
+import * as sqlite3 from 'sqlite3';
 import bcrypt from 'bcryptjs';
 import path from 'path';
 import { mkdirSync } from 'fs';
