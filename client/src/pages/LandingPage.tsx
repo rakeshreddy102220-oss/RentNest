@@ -216,8 +216,16 @@ export default function LandingPage() {
           </div>
           <div className="space-y-2 text-sm text-slate-400">
             <p className="font-semibold text-white">Connect</p>
-            <p>support@rentnest.com</p>
-            <p>+91 98765 43210</p>
+            <p>
+  <a href="mailto:rakesh@rentnest.com">
+    rakesh@rentnest.com
+  </a>
+</p>
+           <p>
+  <a href="tel:+919550910514">
+    +91 9550910514
+  </a>
+</p>
             <p>India</p>
           </div>
         </div>
