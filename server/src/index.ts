@@ -10,7 +10,10 @@ dotenv.config();
 const app = express();
 const port = Number(process.env.PORT) || 4201;
 
-app.use(cors({ origin: 'http://localhost:4200', credentials: true }));
+app.use(cors({
+  origin: 'https://rentnest-frontend-qe6j.onrender.com',
+  credentials: true
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
