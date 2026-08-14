@@ -11,7 +11,7 @@ const app = express();
 const port = Number(process.env.PORT) || 4201;
 
 app.use(cors({
-  origin: 'https://rentnest-frontend-qe6j.onrender.com',
+  origin: 'https://rentnestx-frontend-qe6j.onrender.com',
   credentials: true
 }));
 app.use(express.json());
